@@ -1,0 +1,29 @@
+.Login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+}
+.Login img {
+    width: 50%;
+    margin: 7% 0%;
+}
+.Login h1 { color: white;
+margin-bottom: 20px;
+font-family: 'Lobster Two';
+font-size: 4vw;
+
+}
+.Login button {
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(76, 209, 55);
+    color: black;
+    font-weight: 600;
+    width: 40%;
+    cursor: pointer;
+
+}

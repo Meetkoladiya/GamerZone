@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./App.css";
+import BottomNavBar from "./Components/BottomNavBar";
+import NavBar from "./Components/NavBar";
+import Social from "./Components/Social";
+import Shooter from "./Components/Shooter";
+import CardsGame from "./Components/CardsGame";
+import MultiOnline from "./Components/MultiOnline";
+import Login from "./Components/Login";
+import { useStateValue } from "./Components/StateProvider";
 
 function App() {
-  return (
+  const [{user}, dispatch] = useStateValue();
+   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    { !user ? (<Login /> ) : (<BrowserRouter>
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Social} />
+          <Route path="/CardsGame" component={CardsGame} />
+          <Route patch="/Shooter" component={Shooter} />
+          <Route path="/MultiOnline" component={MultiOnline} />
+        </Switch>
+        <BottomNavBar />
+      </BrowserRouter>)
+      
+    }
+
+      
     </div>
   );
 }

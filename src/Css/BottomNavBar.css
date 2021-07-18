@@ -1,0 +1,20 @@
+.BotNavBar {
+  background-color: rgb(47, 54, 64);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 5px 0px;
+  border-top: 3px solid rgb(68, 189, 50);
+}
+.navigation_BotNavBar {
+  font-size: 26px;
+  cursor: pointer;
+  color: rgb(76, 209, 55);
+  margin: 0vw 6vw;
+}
+.navigation_BotNavBar:hover {
+  color: rgb(68, 189, 50);
+}

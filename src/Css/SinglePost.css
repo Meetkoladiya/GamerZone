@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.singlePost {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 300px;
+  margin: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgb(47, 54, 64);
+  color: white;
+}
+.singlePost img {
+  width: 100%;
+}
+.singlePost_data {
+  margin: 5px 8px;
+}
+.singlePost_data h3 {
+  font-size: 23px;
+  padding: 5px 0px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+.singlePost_data p {
+  text-indent: 14px;
+  padding-bottom: 6px;
+}
+.publisher_post span {
+  font-weight: lighter;
+}
+.developer_post span {
+  font-weight: lighter;
+}
+.button_post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 0px;
+}
+.button_post a {
+  padding: 2px 4px;
+  margin: 0px 6px;
+  outline: none;
+  color: rgb(47, 54, 64);
+  background-color: rgb(76, 209, 55);
+  cursor: pointer;
+  font-weight: 800;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 630px) {
+  .singlePost {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .singlePost_data h3 {
+    font-size: 7vw;
+  }
+}

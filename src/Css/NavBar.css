@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 0px;
+  position: fixed;
+  top: 0px;
+  background-color: rgb(47, 54, 64);
+  margin-bottom: 1%;
+  width: 100%;
+  border-bottom: 3px solid rgb(68, 189, 50);
+}
+.firstPart_NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.firstPart_NavBar img {
+  width: 50px;
+}
+.firstPart_NavBar h2 {
+  color: rgb(76, 209, 55);
+  font-family: "Lobster Two", cursive;
+  letter-spacing: 2px;
+  font-size: 26px;
+  margin-left: 7px;
+}
+.SocialIcon_NavBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.NavBar_Name{
+  color: white;
+  font-size: 1.5vw;
+  margin-left: 10px;
+
+}
+.icon {
+  color: rgb(76, 209, 55);
+  margin-bottom: -3px;
+  font-size: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.icon:hover {
+  color: rgb(68, 189, 50);
+}
+
+@media only screen and (max-width: 630px) {
+  .NavBar {
+    justify-content: space-between;
+  }
+  .firstPart_NavBar {
+    margin-left: 1vw;
+  }
+  .NavBar_Name {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .firstPart_NavBar img {
+    width: 35px;
+  }
+  .firstPart_NavBar h2 {
+    font-size: 20px;
+  }
+  .icon {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .NavBar_Name{
+     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .firstPart_NavBar img {
+    display: none;
+  }
+}
+
