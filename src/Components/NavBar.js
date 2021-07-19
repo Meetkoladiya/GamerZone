@@ -8,7 +8,9 @@ import { useStateValue } from "../Components/StateProvider";
 
 function NavBar() {
   const [{user}, dispatch] = useStateValue();
-
+    const logoutbtn = ()=>{
+      window.location.href="http://localhost:3000";
+    }
   return (
     <div className="NavBar">
       <div>
@@ -20,6 +22,7 @@ function NavBar() {
       <div className="SocialIcon_NavBar">
        <Avatar className="NavBar_Avtar" src={user.photoURL}/>
        <span className="NavBar_Name">{user.displayName}</span>
+       <button class="logoutbtn" onClick={logoutbtn}>LogOut</button>
       </div>
         {/* <a
           href="#"

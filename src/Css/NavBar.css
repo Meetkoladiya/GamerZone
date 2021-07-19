@@ -49,7 +49,16 @@
 .icon:hover {
   color: rgb(68, 189, 50);
 }
-
+.logoutbtn{
+  padding: 2px 4px;
+    margin: 0px 6px;
+    outline: none;
+    color: rgb(47, 54, 64);
+    background-color: rgb(76, 209, 55);
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 4px;
+}
 @media only screen and (max-width: 630px) {
   .NavBar {
     justify-content: space-between;
